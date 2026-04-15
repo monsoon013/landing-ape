@@ -7,24 +7,37 @@
    <link rel='stylesheet' href="./css/style.css">
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span>---TITULO---</span>
+        <div id="carga-pag">
+            <div class="spin"></div>
+            <p>Cargando información ...</p>
         </div>
-        <nav class="menu">
-            <a class="item" href="#">Inicio</a>
-            <a class="item" href="/#b">B</a>
-            <a class="item" href="/#c">C</a>
-            <a class="item" href="/#d">D</a>
-            <a class="item" href="/#cta">Contacto</a>
-        </nav>
+    <header>
+        <div class="logo">Hilo Rojo</div>
+        <p>Protege su hogar</p>
     </header>
 
-    <section class="hero">
+    <section id="hero">
+        <div id="izq-col">
+            <img id="img-animal" src=""/>
+        </div>
+
+        <div id="der-col">
+            <div id="navegacion-img">
+                <button id="btn-retroceso" type="button" class="btn-chevron">&#10094;</button>
+                <button id="btn-avance" type="button" class="btn-chevron">&#10095;</button>
+            </div>
+            <div id="estado">Cargando...</div>
+            <div>
+                <p id="nom-cient">—</p>
+                <h1 id="nom-animal">—</h1>
+            </div>
+
+        </div>
+
         
     </section>
 
