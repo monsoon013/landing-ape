@@ -29,3 +29,43 @@ h1 {
 h2{
     font-size: clamp(1rem, 3vw, 3rem);
 }
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.4rem 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #1313133a;
+    backdrop-filter: blur(2px);
+}
+
+
+
+#izq-col {
+    height: var(--hero-h);
+    position:sticky;
+    top: 0;
+    align-self: start;
+    overflow: hidden;
+
+}
+
+#img-animal {
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.8s ease;
+    opacity: 0; /*empieza en 0 para que jquery la revele*/
+}
+
+#izq-col::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right, transparent 55%, var(--black));
+
+}
