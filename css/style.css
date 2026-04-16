@@ -1,3 +1,31 @@
 :root {
-    
+    --black: #131313;
+    --text: #f1f1f1;
+    --primary: #ecd08f;
+    --secondary: #1e1a10;
+    --danger: #c0392b; 
+    --warning: #e67e22;
+    --safe: #27ae60;
+    --primary-font: 'Playfair Display', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --hero-h: 100vh;   
+}
+
+body, html { 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--black);
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h1 {
+     font-size: clamp(2rem, 5vw, 4rem);
+     font-family: var(--primary-font);
+}
+
+h2{
+    font-size: clamp(1rem, 3vw, 3rem);
 }
