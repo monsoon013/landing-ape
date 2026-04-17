@@ -1,15 +1,15 @@
 
 $(document).ready(function() {
     const apiToken = "vugw5WogDRNMoD9JRdmW2Mpw5CqDcpW4yQLU2";  
-    let API_URL      = 'https://apiv3.iucnredlist.org/api/v3';
+    let API_URL      = 'https://api.gbif.org/v1/species/search?status=ACCEPTED&limit=50&language=es';
     let WIKIPEDIA_URL = 'https://es.wikipedia.org/w/api.php';
 
      let especies   = [];
     let indiceAct  = 0;
 
     
-    $.getJSON(API_URL + '/species/page/0?token=' + apiToken, function(data) {
-        especies = data.result;
+    $.getJSON(API_URL, function(data) {
+        especies = data.results;
         indiceAct = Math.floor(Math.random() * especies.length);
         mostrarAnimal(indiceAct);
     });
