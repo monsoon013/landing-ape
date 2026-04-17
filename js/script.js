@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
-    const apiToken = "vugw5WogDRNMoD9JRdmW2Mpw5CqDcpW4yQLU2";  
-    let API_URL      = 'https://api.gbif.org/v1/species/search?status=ACCEPTED&limit=50&language=es';
-    let WIKIPEDIA_URL = 'https://es.wikipedia.org/w/api.php';
+    const API_URL = '/api/especies';
 
      let especies   = [];
     let indiceAct  = 0;
