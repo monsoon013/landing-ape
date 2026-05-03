@@ -349,9 +349,11 @@ header nav {
     z-index: 200;
     transform: translateX(-120%);
     transition: transform 0.5s ease cubic-bezier(0.23, 1, 0.32, 1);
+    display: none;
 }
 
-#popUp.show {
+#popUp.active {
+    display: block;
     transform: translateX(0);
 }
 
