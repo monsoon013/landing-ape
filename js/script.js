@@ -20,7 +20,6 @@ $(document).ready(function() {
 
     $('#btnNext').on('click', function(){
         if(cargando){
-            cargando=true;
             $('#btnNext').prop('disabled', true);
             $('#btnPrev').prop('disabled', true);
             return;
@@ -122,7 +121,7 @@ $(document).ready(function() {
             })
         }else {
             let idx = Math.floor(Math.random() * pool.length);
-            lastID = poll[idx].id;
+            lastID = pool[idx].id;
             let taxon = pool.splice(idx, 1)[0];
             let titulo = taxon.name.replace(/ /g, "_");
 

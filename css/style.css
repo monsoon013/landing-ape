@@ -95,7 +95,7 @@ header nav {
 
 #img-animal {
     width:100%;
-    height:auto;
+    height:100vh;
     object-fit: cover;
     object-position: center;
     transition: opacity 0.8s ease;
