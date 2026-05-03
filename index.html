@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <title>Who that BIRB? - La aplicación para aficionados</title>
    <link rel='stylesheet' href="./css/style.css">
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
         <!---No me da para hacer esto ahora
@@ -16,50 +17,74 @@
             <div class="spin"></div>
             <p>Cargando información ...</p>
         </div>-->
-    <header>
+    <!---<header>
         <div class="logo">Hilo Rojo</div>
         <nav >Protege su hogar</nav>
-    </header>
+    </header>-->
 
-    <section id="hero">
+    <div id="hero">
         <div id="izq-col">
-            <img id="img-animal" src=""/>
+            <img id="img-animal" src="" class="load">
+            <div class="creditos-foto" id="creditosFoto"></div>
         </div>
 
         <div id="der-col">
-            <div id="navegacion-img">
-                <button id="btn-retroceso" type="button" class="btn-chevron">&#10094;</button>
-                <button id="btn-avance" type="button" class="btn-chevron">&#10095;</button>
-            </div>
-            <div id="estado">Cargando...</div>
-            <div>
-                <p id="nom-cient">—</p>
+            <!---<div id="estado">Cargando...</div>--->
+            <div class="panel-info">
+                <span class="title">Explorador de Aves</span>
                 <h1 id="nom-animal">—</h1>
+                <span id="nom-cient">—</span>
             </div>
-            <div id="divider"></div>
             <p id="desc-an">Descripción construyéndose ...</p>
             <div id="info-animal">
                 <div class="item">
-                    <label>Reino</label>
-                    <span id="reino">—</span>
+                    <label>Orden</label>
+                    <span class="dato" id="aOrden">—</span>
                 </div>
                 <div class="item">
-                    <label>Estado IUCN</label>
-                    <span id="estado-iucn">—</span>
+                    <label>Familia</label>
+                    <span class="dato" id="aFamilia">—</span>
                 </div>
                 <div class="item">
-                    <label>Tendencia Población</label>
-                    <span class="tendencia" id="tendencia">—</span>
+                    <label>Estado</label>
+                    <span class="dato" id="aEstado">—</span>
                 </div>
                 <div class="item">
-                    <label>Año de evaluación</label>
-                    <span id="año">—</span>
+                    <label>Registros</label>
+                    <span class="dato" id="aRegistros">—</span>
                 </div>
             </div>
-        </div>
-    </section>
+            <!--<div id="popup">
+                <button id="cerrar-popup">×</button>
+                <div class="popup-titulo">¿Sabías qué ...?</div>
+                <p id="popup-texto">Cargando dato ...</p>
+            </div>-->
 
-    <section id="cta">
+            <footer class="addons">
+                <div class="nav">
+                    <button class="btn-nav" id="btnPrev">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button class="btn-nav" id="btnNext">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+                <button class="btn-funfact" id="btnCuriosidad">¿Sabías que ...?</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="popup" id="popUp">
+        <div class="cont-popup">
+            <button class="cerrar-popup" id="cerrarPopup">✕</button>
+            <div class="pestaña">¿Sabías que?</div>
+            <p id="textoCur">...</p>
+        </div>
+    </div>
+
+
+
+    <!--<section id="cta">
         <h2>¿Qué puedes hacer tú?</h2>
         <p> 
             Cada acción cuenta. Desde reducir tu huella de carbono
@@ -78,13 +103,9 @@
                 Threatened Species. Version 2025-2 <www.iucnredlist.org>
                 </p>
         </div>
-    </footer>
+    </footer>-->
 
-    <div id="popup">
-        <button id="cerrar-popup">×</button>
-        <div class="popup-titulo">¿Sabías qué ...?</div>
-        <p id="popup-texto">Cargando dato ...</p>
-    </div>
+
    <script src="./js/script.js"></script>
 </body>
 </html>
