@@ -382,18 +382,24 @@ header nav {
 }
 
 @media (max-width: 1000px) {
-    body{
+    #hero{
         flex-direction: column;
         height: auto;
         overflow-y: auto;
     }
 
-    .izq-col{
+    #izq-col{
         width: 100%;
-        height: 50vh;
+        height: 30vh;
     }
 
-    .der-col {
+    #img-animal{
+        height: 30vh;
+        
+    }
+    
+
+    #der-col {
         width: 100%;
         height: auto;
         padding: 3rem 2rem;
